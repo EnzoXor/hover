@@ -1,64 +1,95 @@
-*
-{
+*{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    overflow-x: hidden
+    
 }
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;1,700&display=swap');
+.fi-br-menu-burger{
+color: white;
+font-size: 3rem;
+align-items: center;
+}
+
+html{
+    font-family: 'Roboto Mono', monospace;
+
+    
+}
+.buttonM, .carlao{
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem;
+    border: 0;
+    background-color: transparent;
+}
+.header{
+    background-color: rgb(49, 0, 92);
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.itens{
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+align-content: center;
+}
+.p01{
+    width: 100vw;
+    font: 'Roboto Mono', monospace;;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgb(158, 1, 158), rgb(33, 0, 71));
+    display: flex;
+    
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    display: flex;
-    background-color: rgb(22, 7, 39);
     
+    color: white;
+    animation: ease infinite;
+    animation-name: pinto;
+    animation-duration: 10s;
+    background-size: 400% 400%;
 }
-ul
-{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+
+@keyframes pinto {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-li
-{
-    position: relative;
-    list-style: none;
+.coiso{
+    margin: 3rem;
+    justify-content: center;
+    width: 65rem;
 }
-ul li a
-{
-   position: relative;
-   letter-spacing: .5rem;
-    line-height: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 5rem;
+.p01 h1{
+    justify-content: center;
+    margin-bottom: 10rem;
+    font-size: 8rem;
+    -webkit-text-stroke:  1px white;
     color: transparent;
-    -webkit-text-stroke: 1px whitesmoke;
-}
-data-text
-{
     
 }
 
-
-ul li a::before
-{
-    
-    position: absolute;
-    content: attr(data-text);
-    color: var(--clr);
-    width: 0;
-    botton:1rem;
-   height:5rem;
-    overflow: hidden;
-    transition: 1s;
-    border-right: 8px solid var(--clr);
-    -webkit-text-stroke:  1px var(--clr);
+.p02{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://pbs.twimg.com/media/DosFtSMW4AAGw2d.jpg);
+    height: 100vh;
+    width: 100vw;
+    color: red;
+    font-size: 3rem    ;
 }
-ul li a:hover::before
-{
-    width: 100%;
-    filter: drop-shadow(0 0 25px var(--clr));
+.butao{
+    text-decoration: none;
+    color: transparent;
+
 }
